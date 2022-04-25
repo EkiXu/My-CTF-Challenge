@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>后台</title>
+        <link rel="stylesheet" href="https://www.layuicdn.com/layui/css/layui.css"  media="all">
+        <style>
+            #avatar_thumb {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 168px;
+                height: 168px;
+                margin: -50px 0 0 -84px;
+                border-radius: 100%;
+            }
+        </style>
+    </head>
+<body>
+
+<div class="layui-card-body" style="text-align: center;">
+    <h1>网站后台</h1>
+    <div class="layui-form-item">
+        <div style="position: relative;width: 373px;height: 373px;background-color: #F2F2F5;margin: auto;">
+            <button type="button" class="layui-btn" id="avatar">
+                <i class="layui-icon">&#xe67c;</i>上传头像
+            </button>
+                <img src="" id="avatar_thumb">
+            <input type="hidden" name="avatar" value="">
+        </div>
+    </div>
+</div>
+
+<!-- layui.js 和jquery.js 推荐使用本地文件 -->
+
+<script src="https://www.layuicdn.com/layui/layui.js" charset="utf-8"></script>
+<script src="/public/static/js/jquery.min.js"></script>
+<script src="/public/static/js/common.js"></script>
+<script>
+    layui.use(['form', 'upload'], function() {
+        var upload = layui.upload;
+        //图片上传
+        common_upload('avatar');
+        //文件上传
+        //common_upload('avatar','file');
+    });
+</script>
+
+</body>
+</html>

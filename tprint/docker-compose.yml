@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  web:
+    build: .
+    image: mrctf2022/tprint
+    restart: always
+    ports:
+      - "8888:81"

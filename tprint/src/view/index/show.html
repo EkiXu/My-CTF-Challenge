@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>展示</title>
+        <link rel="stylesheet" href="https://www.layuicdn.com/layui/css/layui.css"  media="all">
+        <style>
+            #avatar_thumb {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 168px;
+                height: 168px;
+                margin: -50px 0 0 -84px;
+                border-radius: 100%;
+            }
+        </style>
+    </head>
+<body>
+
+<div class="layui-card-body" style="text-align: center;">
+    <div class="layui-form-item">
+        <div style="position: relative;width: 373px;height: 373px;background-color: #F2F2F5;margin: auto;">
+            <h1>图片</h1>
+            <img src="/public/static/images/thumbs/{$pic}" id="avatar_thumb">
+        </div>
+    </div>
+</div>
+
+<!-- layui.js 和jquery.js 推荐使用本地文件 -->
+
+<script src="https://www.layuicdn.com/layui/layui.js" charset="utf-8"></script>
+<script src="/public/static/js/jquery.min.js"></script>
+</body>
+</html>

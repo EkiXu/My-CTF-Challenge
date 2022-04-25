@@ -1,0 +1,7 @@
+version: "3.6"
+services:
+  app:
+    image: mrctf2022/springcoffee
+    build: "."
+    ports:
+      - "10805:8085"
